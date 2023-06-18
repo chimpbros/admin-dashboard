@@ -114,6 +114,7 @@
     font-size: 1rem;
     font-weight: 600;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .sidebar {
@@ -176,10 +177,58 @@ li a:hover {
 .main-content-ctn {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: #dce3e6;
+    gap: 2rem;
+    padding: 15px 20px;
 }
 
 .project-ctn {
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 2rem 1rem;
+}
+
+.project-ctn > h3 {
+    grid-column: 1 / -1;
+    margin: 10px 0 -20px 0;
+}
+
+.project {
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.color-block {
+    grid-row: 1 / 3;
+    width: 10px;
+    background-color: #e7c429;
+    border-radius: 10px 0 0 10px;
+}
+
+.text-section {
+    padding: 1rem 2rem 0 1rem;
+}
+
+.text-section h3 {
+    margin-bottom: 5px;
+}
+
+.action-section {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    align-items: flex-end;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.action-section img {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 img {
