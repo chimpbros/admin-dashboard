@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 * {
     margin: 0;
@@ -138,6 +138,39 @@
 
 .logo-ctn h1 {
     font-size: 2rem;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+li a {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.2s;
+}
+
+li a img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(14deg) brightness(102%) contrast(103%);
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+li a:hover {
+   transform: scale(1.1);
+}
+
+.main-menu {
+    margin: 40px 15px;
+}
+
+.other-menu {
+    margin: 10px 15px 0 15px;
 }
 
 .main-content-ctn {
